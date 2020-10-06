@@ -3,6 +3,7 @@ package com.ADM.cucumber.testRunner;
 import java.io.File;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.DataProvider;
 
 import com.cucumber.listener.Reporter;
 
@@ -19,7 +20,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //,jsonUsageReport = "target/cucumber-usage.json"
 //,usageReport = true,toPDF = true,outputFolder = "target")
 @CucumberOptions(features = {
-		"C:\\Users\\aathi\\eclipse-workspace\\Cucumber\\src\\main\\java\\com\\ADM\\cucumber\\feature\\fbhome.feature" }// "C:\\Users\\aathi\\eclipse-workspace\\CricBuzzCucumbebr\\src\\main\\java\\features\\Cricinfo.feature"}//,"C:\\Users\\aathi\\eclipse-workspace\\CricBuzzCucumbebr\\src\\main\\java\\features\\Cricinfo.feature"}//the
+		"C:\\Users\\aathi\\eclipse-workspace\\Cucumber\\src\\main\\java\\com\\ADM\\cucumber\\feature\\fbhome.feature"}//the
 																														// path
 																														// of
 																														// feature
@@ -40,6 +41,9 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 )
 
 public class Runnerclass extends AbstractTestNGCucumberTests {
+
+	
+	
 	@AfterClass
 	public static void writeExtentReport() {
 		Reporter.loadXMLConfig(new File(

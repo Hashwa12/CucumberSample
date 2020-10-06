@@ -10,11 +10,11 @@ formatter.scenarioOutline({
   "comments": [
     {
       "line": 4,
-      "value": "#@smoke"
+      "value": "#@Smoke"
     },
     {
       "line": 5,
-      "value": "#Scenario: Login with credentials"
+      "value": "#Scenario Outline: Login with credentials"
     },
     {
       "line": 6,
@@ -22,66 +22,30 @@ formatter.scenarioOutline({
     },
     {
       "line": 7,
-      "value": "#Then Enter User ID and Password"
-    },
-    {
-      "line": 8,
-      "value": "#|Password|"
-    },
-    {
-      "line": 9,
-      "value": "#|hai|"
-    },
-    {
-      "line": 10,
-      "value": "#|hello|"
-    },
-    {
-      "line": 11,
-      "value": "#|welcome|"
-    },
-    {
-      "line": 12,
-      "value": "#Then Click Login Button"
-    },
-    {
-      "line": 14,
-      "value": "#@Smoke"
-    },
-    {
-      "line": 15,
-      "value": "#Scenario Outline: Login with credentials"
-    },
-    {
-      "line": 16,
-      "value": "#Given Open FB login page"
-    },
-    {
-      "line": 17,
       "value": "#Then Enter User ID \"\u003cid\u003e\" and Password \"\u003cpassword\u003e\""
     },
     {
-      "line": 18,
+      "line": 8,
       "value": "#Then Click Login Button"
     },
     {
-      "line": 19,
+      "line": 9,
       "value": "#Examples:"
     },
     {
-      "line": 20,
+      "line": 10,
       "value": "#|id|password|"
     },
     {
-      "line": 21,
+      "line": 11,
       "value": "#|abcd|hai|"
     },
     {
-      "line": 22,
+      "line": 12,
       "value": "#|hello|abcd|"
     }
   ],
-  "line": 25,
+  "line": 15,
   "name": "Login with credentials",
   "description": "",
   "id": "reach-newsfeeds-in-fb;login-with-credentials",
@@ -89,39 +53,39 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 24,
+      "line": 14,
       "name": "@ignore"
     }
   ]
 });
 formatter.step({
-  "line": 26,
+  "line": 16,
   "name": "Open FB login page \"\u003cTotal Rounds\u003e\" \"\u003cTotal Values\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 27,
+  "line": 17,
   "name": "Enter User ID and Password",
   "rows": [
     {
       "cells": [
-        "abcd",
+        "321",
         "pasword"
       ],
-      "line": 28
+      "line": 18
     },
     {
       "cells": [
         "1234",
         "asdf"
       ],
-      "line": 29
+      "line": 19
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 30,
+  "line": 20,
   "name": "Click Login Button",
   "rows": [
     {
@@ -129,27 +93,27 @@ formatter.step({
         "Rounds",
         "Values"
       ],
-      "line": 31
+      "line": 21
     },
     {
       "cells": [
         "Round 1",
         "Value 1"
       ],
-      "line": 32
+      "line": 22
     },
     {
       "cells": [
         "Round 2",
         "Value 2"
       ],
-      "line": 33
+      "line": 23
     }
   ],
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 36,
+  "line": 26,
   "name": "",
   "description": "",
   "id": "reach-newsfeeds-in-fb;login-with-credentials;",
@@ -159,30 +123,30 @@ formatter.examples({
         "Total Rounds",
         "Total Values"
       ],
-      "line": 37,
+      "line": 27,
       "id": "reach-newsfeeds-in-fb;login-with-credentials;;1"
     },
     {
       "cells": [
-        "First Round",
+        "12",
         "All first Value"
       ],
-      "line": 38,
+      "line": 28,
       "id": "reach-newsfeeds-in-fb;login-with-credentials;;2"
     },
     {
       "cells": [
-        "Second Round",
+        "2",
         "All Second Value"
       ],
-      "line": 39,
+      "line": 29,
       "id": "reach-newsfeeds-in-fb;login-with-credentials;;3"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 331500,
+  "duration": 303400,
   "status": "passed"
 });
 formatter.background({
@@ -193,7 +157,7 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 38,
+  "line": 28,
   "name": "Login with credentials",
   "description": "",
   "id": "reach-newsfeeds-in-fb;login-with-credentials;;2",
@@ -201,14 +165,14 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 24,
+      "line": 14,
       "name": "@ignore"
     }
   ]
 });
 formatter.step({
-  "line": 26,
-  "name": "Open FB login page \"First Round\" \"All first Value\"",
+  "line": 16,
+  "name": "Open FB login page \"12\" \"All first Value\"",
   "matchedColumns": [
     0,
     1
@@ -216,28 +180,28 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 27,
+  "line": 17,
   "name": "Enter User ID and Password",
   "rows": [
     {
       "cells": [
-        "abcd",
+        "321",
         "pasword"
       ],
-      "line": 28
+      "line": 18
     },
     {
       "cells": [
         "1234",
         "asdf"
       ],
-      "line": 29
+      "line": 19
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 30,
+  "line": 20,
   "name": "Click Login Button",
   "rows": [
     {
@@ -245,21 +209,21 @@ formatter.step({
         "Rounds",
         "Values"
       ],
-      "line": 31
+      "line": 21
     },
     {
       "cells": [
         "Round 1",
         "Value 1"
       ],
-      "line": 32
+      "line": 22
     },
     {
       "cells": [
         "Round 2",
         "Value 2"
       ],
-      "line": 33
+      "line": 23
     }
   ],
   "keyword": "Then "
@@ -267,40 +231,40 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "First Round",
+      "val": "12",
       "offset": 20
     },
     {
       "val": "All first Value",
-      "offset": 34
+      "offset": 25
     }
   ],
-  "location": "FBstepDef.open_FB_login_page(String,String)"
+  "location": "FBstepDef.open_FB_login_page(int,String)"
 });
 formatter.result({
-  "duration": 306329500,
+  "duration": 163521200,
   "status": "passed"
 });
 formatter.match({
   "location": "FBstepDef.enter_User_ID_and_Password(DataTable)"
 });
 formatter.result({
-  "duration": 2683700,
+  "duration": 1574300,
   "status": "passed"
 });
 formatter.match({
   "location": "FBstepDef.click_Login_Button(DataTable)"
 });
 formatter.result({
-  "duration": 358300,
+  "duration": 506700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 121700,
+  "duration": 178900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 94900,
+  "duration": 118200,
   "status": "passed"
 });
 formatter.background({
@@ -311,7 +275,7 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 39,
+  "line": 29,
   "name": "Login with credentials",
   "description": "",
   "id": "reach-newsfeeds-in-fb;login-with-credentials;;3",
@@ -319,14 +283,14 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 24,
+      "line": 14,
       "name": "@ignore"
     }
   ]
 });
 formatter.step({
-  "line": 26,
-  "name": "Open FB login page \"Second Round\" \"All Second Value\"",
+  "line": 16,
+  "name": "Open FB login page \"2\" \"All Second Value\"",
   "matchedColumns": [
     0,
     1
@@ -334,28 +298,28 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 27,
+  "line": 17,
   "name": "Enter User ID and Password",
   "rows": [
     {
       "cells": [
-        "abcd",
+        "321",
         "pasword"
       ],
-      "line": 28
+      "line": 18
     },
     {
       "cells": [
         "1234",
         "asdf"
       ],
-      "line": 29
+      "line": 19
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 30,
+  "line": 20,
   "name": "Click Login Button",
   "rows": [
     {
@@ -363,21 +327,21 @@ formatter.step({
         "Rounds",
         "Values"
       ],
-      "line": 31
+      "line": 21
     },
     {
       "cells": [
         "Round 1",
         "Value 1"
       ],
-      "line": 32
+      "line": 22
     },
     {
       "cells": [
         "Round 2",
         "Value 2"
       ],
-      "line": 33
+      "line": 23
     }
   ],
   "keyword": "Then "
@@ -385,36 +349,36 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "Second Round",
+      "val": "2",
       "offset": 20
     },
     {
       "val": "All Second Value",
-      "offset": 35
+      "offset": 24
     }
   ],
-  "location": "FBstepDef.open_FB_login_page(String,String)"
+  "location": "FBstepDef.open_FB_login_page(int,String)"
 });
 formatter.result({
-  "duration": 199300,
+  "duration": 210000,
   "status": "passed"
 });
 formatter.match({
   "location": "FBstepDef.enter_User_ID_and_Password(DataTable)"
 });
 formatter.result({
-  "duration": 146000,
+  "duration": 780200,
   "status": "passed"
 });
 formatter.match({
   "location": "FBstepDef.click_Login_Button(DataTable)"
 });
 formatter.result({
-  "duration": 235500,
+  "duration": 315500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 73200,
+  "duration": 109300,
   "status": "passed"
 });
 });

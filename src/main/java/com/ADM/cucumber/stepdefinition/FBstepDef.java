@@ -1,5 +1,6 @@
 package com.ADM.cucumber.stepdefinition;
 
+import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Map;
 
@@ -18,9 +19,11 @@ public class FBstepDef extends Initialize {
 	HomePagePOM hp;
 
 	@Given("^Open FB login page \"([^\"]*)\" \"([^\"]*)\"$")
-	public void open_FB_login_page(String s1, String s2) throws Throwable {
+	public void open_FB_login_page(int s1, String s2) throws Throwable {
 //		init();
 //		hp = new HomePagePOM();
+		s1=s1+s1;
+		s2=s2+s2;
 		System.out.println(s1+"\t"+s2);
 	}
 
@@ -55,8 +58,8 @@ public class FBstepDef extends Initialize {
 		public void click_Login_Button(DataTable table) throws Throwable {
 		for(Map<String,String> str: table.asMaps(String.class, String.class))
 		{
-			System.out.println(str.get("Total Rounds"));
-			System.out.println(str.get("Total Values"));
+			System.out.println(str.get("Rounds"));
+			System.out.println(str.get("Values"));
 			
 		}
 				
@@ -67,7 +70,7 @@ public class FBstepDef extends Initialize {
 	}
 
 	@Before
-	public void beforeScenario() {
+	public void beforeScenario(Scenario m) {
 		System.out.println("Before hooks print here.........");
 	}
 
